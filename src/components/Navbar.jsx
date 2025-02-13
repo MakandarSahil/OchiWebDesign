@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full px-10 md:px-20 py-8 flex justify-between items-center font-['Navbar']">
+    <nav className="fixed z-[999] w-full px-10 md:px-20 py-8 flex justify-between items-center font-['Navbar']">
       <div className="logo">
         <h3>
           <svg
@@ -46,7 +46,7 @@ const Navbar = () => {
             <a
               key={index}
               className={`text-md capitalize font-light ${
-                index === 4 && "xl:ml-96 lg:ml-42"
+                index === 4 && "xl:ml-56 lg:ml-42"
               }`}
               href="#"
             >
